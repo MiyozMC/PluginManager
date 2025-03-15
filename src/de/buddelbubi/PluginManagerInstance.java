@@ -16,7 +16,7 @@ public class PluginManagerInstance extends PluginBase {
 
 	public static Plugin plugin;
 	
-	public static final String prefix = "�ePluginManager �8� �7";
+	public static final String prefix = "§ePluginManager §8» §7";
 	
 	public void onEnable() {
 		
@@ -24,7 +24,7 @@ public class PluginManagerInstance extends PluginBase {
 	
 		Command command = new PluginManagerCommand("pluginmanager");
 		command.setAliases(new String[] {"pm"});
-		command.setDescription("The main PluginManager command.");
+		command.setDescription("PluginManager的主命令");
 		
 		getServer().getCommandMap().register(command.getName(), command);
 		
